@@ -1,0 +1,44 @@
+@keyframes b2 {
+	from {transform: translateY(0px) }
+	30% { transform: translateY(3px);}
+	60% { transform: translateY(7px);}  
+	to { 	transform: rotate(45deg);
+			background-color: $active;
+		  	top: 13px;
+	}
+	
+ }
+ 
+ @keyframes b1 {
+	from {transform: translateY(0px) }
+	30% { transform: translateY(-3px);}
+	60% { transform: translateY(-7px);} 
+	to { transform: rotate(-45deg);
+			background-color: $active;
+			bottom: 15px;
+	}
+ }
+
+ @keyframes b3 {
+	from {opacity: 1;}
+	50% {opacity: 0.5;} 
+	to { opacity: 0;}
+ }
+
+ @keyframes as {
+	from {transform: translateY(60px) }
+	to { transform: translateY(0px);
+	}
+ }
+
+ .start {
+	transform: translate(0px, 5rem);
+	opacity: 0;
+	transition: all .8s ease 0s;
+ }
+
+.end {
+	transform: translate(0px, 0px);
+	opacity: 1;
+	transition: all .8s ease .4s;
+}
